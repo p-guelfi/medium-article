@@ -1,0 +1,103 @@
+.banner {
+  position: relative;
+  height: 300px;
+  background-image: url('https://images.unsplash.com/5/unsplash-kitsune-4.jpg?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce40ce8b8ba365e5e6d06401e5485390');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Optional: for a dark overlay effect */
+}
+
+.banner-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.banner-title {
+  font-size: 3em;
+  margin: 0;
+}
+
+.banner-description {
+  font-size: 1.5em;
+  margin: 10px 0 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+body {
+  color: #494949;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: lighter;
+  font-family: 'Lora', serif;
+  margin: 0;
+}
+
+h2 {
+  color: #A0A0A0;
+  font-weight: normal;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-medium {
+  background-image: linear-gradient(to bottom, rgba(233, 253, 240, 1), rgba(233, 253, 240, 1));
+  color: #636363;
+  font-weight: lighter;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.link-medium:hover {
+  background-image: linear-gradient(to bottom, rgb(115, 185, 141), rgb(76, 130, 95));
+}
+
+/* Responsive styles */
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
